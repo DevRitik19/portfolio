@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+           background-color: black;
+    }
+    .earth{
+        height:100px;
+        width:100px;
+        border-radius: 50%;
+        background-color: rgb(28, 19, 197);
+        color:white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        animation:rotateCircle 4s linear infinite;
+            }
+            @keyframes rotateCircle{
+                from{
+                    transform: rotate(0deg);
+                }
+                to{
+                    transform:rotate(360deg);
+                }
+            }
+            .orbit {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 250px;       
+                height: 40px;
+                transform-origin: center;
+                animation: orbitRotate 4s linear infinite; 
+                transform: translate(-50%, -50%);
+}
+            .moon{
+                    height:50px;
+                    width: 50px;
+                    background-color:rgba(245, 245, 245, 0.783);
+                    border-radius: 50%;
+                    transform: translateY(50%);
+
+                    }
+                    @keyframes orbitRotate {
+             from {
+            transform: translate(-50%, -50%) rotate(0deg);
+             }
+             to {
+             transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="earth"></div>
+    </div>
+    <div class="orbit">
+        <div class="moon"></div>
+    </div>
+</body>
+</html>

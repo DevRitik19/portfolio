@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            padding: 60px;
+            height: 250px;
+            width: 250px;
+            border: 5px solid pink;
+        }
+        .container:hover{
+            background-color: black;
+            border-radius: 50%;
+            transition-duration:0.5s;
+            border: 5px dotted red;
+        }
+        button{
+            background-color: pink;
+            height: 250px;
+            width: 250px;
+            
+            transition-duration: 2s,3s,4s;
+            border: 5px solid blue;
+            transition-property: all;
+        }
+        button:hover{background-color: yellow;
+        width: 250px;
+        color:blue;
+        border-radius: 50%;
+        font-size: large;
+        transform: translateX(230px); 
+        rotate:360deg;
+    </style>
+</head>
+<body>
+    <div class="container">
+   <button>Start</button> 
+   </div>
+</body>
+</html>

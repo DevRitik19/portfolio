@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Player Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f0f8ff;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 15px;
+      color: #444;
+    }
+    audio, video {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Media Player</h1>
+
+  <!-- Section 1: Audio Player -->
+  <section>
+    <h2>Now Playing: Sailing Away</h2>
+    <audio controls aria-label="Audio player for Sailing Away">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Section 2: Video Player -->
+  <section>
+    <h2>Now Playing: What is the map Method</h2>
+    <video controls width="700" aria-label="Video player for map method tutorial">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/What%20is%20the%20map%20method%20and%20how%20does%20it%20work.mp4" type="video/mp4">
+      <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Section 3: Transcript -->
+  <section>
+    <h2>Transcript</h2>
+    <p>
+      This video explains the JavaScript map() method, which creates a new array by applying a provided function 
+      to every element in the calling array. The map() method does not change the original array. It is often 
+      used for transforming data, and is a fundamental tool in functional programming within JavaScript.
+    </p>
+  </section>
+
+</body>
+</html>
